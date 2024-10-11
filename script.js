@@ -7,13 +7,16 @@ const prices = {
 };
 
 containers.forEach(container => {
-    const radioInput = container.querySelector('input[name="unit"]'); 
+    const radioInput = container.querySelector('input[name="unit"]');
 
     radioInput.addEventListener('change', function() {
-        containers.forEach(c => c.classList.remove('active'));
-        
+        containers.forEach(c => {
+            c.classList.remove('active');
+            c.style.backgroundColor = ''; 
+        });
+
         container.classList.add('active');
-        containers.style.bgcolor="#FF6B82";
+        container.style.backgroundColor = "#fff9fa";
 
         const selectedValue = radioInput.value;
         const newTotal = prices[selectedValue].toFixed(2);

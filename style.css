@@ -96,10 +96,6 @@ body,html{
     display: none;
     flex-direction: column;
 }
-.container.active {
-    background-color: #fff9fa;
-}
-
 .container.active .expanded-content {
     display: block;
 }
