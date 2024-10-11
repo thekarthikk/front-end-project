@@ -120,11 +120,6 @@ body,html{
     width: 6rem;
     border: 1px solid lightgray;
     border-radius: .2rem;
-}
-.options select.size{
-    margin: 5px 0 0 10px;
-}
-.options select.color{
     margin: 5px 0 0 10px;
 }
 .delivery-container{
@@ -161,85 +156,17 @@ body,html{
 
 @media screen and (max-width: 1024px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
-        width: 25rem; 
+        width: 25rem;
     }
 }
-
 @media screen and (max-width: 768px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
-        width: 20rem; 
-    }
-
-    .main-container {
-        padding: 0 1rem; 
-    }
-
-    .text-container h1 {
-        font-size: 1.8rem;
-    }
-
-    .discount {
-        font-size: 0.8rem;
-        width: 4rem;
-    }
-
-    .sub-container {
-        height: auto; 
-        align-items: center;
-    }
-
-    .inner-right {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    .options select {
-        width: 5rem;
-        font-size: 0.9rem;
-    }
-
-    .button button {
-        font-size: 0.9rem;
-    }
-    .most-popular .badge{
-        font-size: .8rem;
+        width: 20rem;
     }
 }
-
 @media screen and (max-width: 480px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
-        width: 18rem; 
-    }
-
-    .main-container {
-        padding: 0 0.5rem;
-    }
-
-    .text-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .discount {
-        font-size: 0.7rem;
-        width: 3.5rem;
-    }
-
-    .inner-left h3, .inner-right strong {
-        font-size: 1.2rem; 
-    }
-
-    .inner-right .old-price {
-        font-size: 10px;
-    }
-
-    .options select {
-        width: 4rem;
-        font-size: 0.8rem;
-    }
-
-    .button button {
-        height: 2.5rem;
-        font-size: 0.85rem;
+        width: 18rem;
     }
     .most-popular .badge{
         font-size: .7rem;
