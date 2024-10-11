@@ -28,7 +28,7 @@ body,html{
 }
 .container{
     border: 2px solid #ddd;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .sub-container{
     display: flex;
@@ -96,6 +96,10 @@ body,html{
     display: none;
     flex-direction: column;
 }
+.container.active {
+    background-color: #fff9fa;
+}
+
 .container.active .expanded-content {
     display: block;
 }
@@ -103,12 +107,12 @@ body,html{
     display: flex;
 }
 .text-size p{
-    margin: 0 0 5px 70px;
+    margin: 0 0 5px 95px;
     font-weight: 540;
 }
 .options{
     display: flex;
-    margin:0 0 0 40px;
+    margin:0 0 0 70px;
 }
 .options select{
     font-size: 1rem;
@@ -129,10 +133,15 @@ body,html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 5px 0;
+    margin: 0 0 15px 0;
 }
 .delivery-container h3{
     color: #f16277;
+    font-weight: 500;
+}
+.delivery-container p{
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .button{
     display: flex;
@@ -150,13 +159,13 @@ body,html{
 
 /* media queries */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
         width: 25rem; 
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
         width: 20rem; 
     }
@@ -192,9 +201,12 @@ body,html{
     .button button {
         font-size: 0.9rem;
     }
+    .most-popular .badge{
+        font-size: .8rem;
+    }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .sub-container, .expanded-content, .delivery-container, .button button {
         width: 18rem; 
     }
@@ -228,5 +240,8 @@ body,html{
     .button button {
         height: 2.5rem;
         font-size: 0.85rem;
+    }
+    .most-popular .badge{
+        font-size: .7rem;
     }
 }
