@@ -1,0 +1,232 @@
+body,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Horizontal-line{
+    height: 1px;
+    width: 7.5rem;
+    margin:10px 0 0 8px;
+    background-color: lightgray;
+}
+.text-container h1{
+    text-align: center;
+    color: #f16277;
+}
+.container{
+    border: 2px solid #ddd;
+    margin-bottom: 30px;
+}
+.sub-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 30rem;
+    cursor: pointer;
+    padding: 2px;
+}
+.left-top{
+    display: flex;
+}
+.left-top input{
+    accent-color: #f16277;
+    margin: 10px;
+}
+.left-down{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: -30px 0 0 30px;
+}
+.most-popular {
+    position: relative;
+    border: 2px solid #f16277;
+}
+
+.most-popular .badge {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    background-color: #f16277;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 0.2rem;
+}
+.discount{
+    height: 1.5rem;
+    width: 5rem;
+    font-size: .9rem;
+    color: white;
+    background-color: #f16277;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 10px;
+}
+
+.inner-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #333;
+}
+
+.old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #aaa;
+}
+.expanded-content{
+    height: 8rem;
+    width: 30rem;
+    display: none;
+    flex-direction: column;
+}
+.container.active .expanded-content {
+    display: block;
+}
+.text-size{
+    display: flex;
+}
+.text-size p{
+    margin: 0 0 5px 70px;
+    font-weight: 540;
+}
+.options{
+    display: flex;
+    margin:0 0 0 40px;
+}
+.options select{
+    font-size: 1rem;
+    height: 2rem;
+    width: 6rem;
+    border: 1px solid lightgray;
+    border-radius: .2rem;
+}
+.options select.size{
+    margin: 5px 0 0 10px;
+}
+.options select.color{
+    margin: 5px 0 0 10px;
+}
+.delivery-container{
+    height: 2.5rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 5px 0;
+}
+.delivery-container h3{
+    color: #f16277;
+}
+.button{
+    display: flex;
+}
+.button button{
+    height: 3rem;
+    width: 30rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #f16277;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .sub-container, .expanded-content, .delivery-container, .button button {
+        width: 25rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sub-container, .expanded-content, .delivery-container, .button button {
+        width: 20rem; 
+    }
+
+    .main-container {
+        padding: 0 1rem; 
+    }
+
+    .text-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .discount {
+        font-size: 0.8rem;
+        width: 4rem;
+    }
+
+    .sub-container {
+        height: auto; 
+        align-items: center;
+    }
+
+    .inner-right {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .options select {
+        width: 5rem;
+        font-size: 0.9rem;
+    }
+
+    .button button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-container, .expanded-content, .delivery-container, .button button {
+        width: 18rem; 
+    }
+
+    .main-container {
+        padding: 0 0.5rem;
+    }
+
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .discount {
+        font-size: 0.7rem;
+        width: 3.5rem;
+    }
+
+    .inner-left h3, .inner-right strong {
+        font-size: 1.2rem; 
+    }
+
+    .inner-right .old-price {
+        font-size: 10px;
+    }
+
+    .options select {
+        width: 4rem;
+        font-size: 0.8rem;
+    }
+
+    .button button {
+        height: 2.5rem;
+        font-size: 0.85rem;
+    }
+}
